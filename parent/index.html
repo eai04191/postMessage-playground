@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Parent Window</title>
+    </head>
+    <body>
+        <div id="app" style="display: flex; flex-direction: column">
+            <div>
+                <p>Parent Window</p>
+                <div>
+                    <label>token: <input id="token" value="someValue" /></label>
+                    <button id="open">Open Child Window</button>
+                </div>
+                <div>
+                    <label
+                        >message:
+                        <input id="message" value="Hello from Parent!"
+                    /></label>
+                    <button id="sendMessage">Send Single Message</button>
+                </div>
+                <hr />
+            </div>
+            <p>Received:</p>
+            <textarea id="log" style="field-sizing: content"></textarea>
+        </div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
